@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO DO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="container mx-auto">
+        <h1 class="h-20 w-80 bg-gray-100 text-orange-500 flex justify-center items-center text-4xl font-bold mt-4 rounded-xl">To-Do</h1>
+    <form id="ourForm" class="my-10">
+        <input type="text" id="ourFild" required class="border border-cyan-500 rounded-lg p-2">
+        <button type="submit" class="bg-green-400 px-4 py-2 rounded-xl">Add Item</button>
+    </form>
 
-
-
-
+    <section class="bg-gray-100 w-80 p-4">
+        <h3 class="text-xl font-semibold pb-2 border-b-2 border-cyan-500">Need To Do</h3>
+    <ul id="ourList" class="list-decimal list-inside">
+        
+    </ul>
+    </section>
 
     <script src="app.js"></script>
 </body>
